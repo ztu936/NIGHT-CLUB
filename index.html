@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гей-Клуб</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Добро пожаловать в Гей-Клуб</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleGallery()">Фотогалерея</a></li>
+                <li><a href="#" onclick="toggleChat()">Чат с консультантами</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="gallery" class="hidden">
+        <h2>Фотогалерея</h2>
+        <img src="photo1.jpg" alt="Клуб">
+        <img src="photo2.jpg" alt="клуб">
+        <img src="photo3.jpg" alt="Танцпол">
+    </section>
+
+    <section id="chat" class="hidden">
+        <h2>Чат с консультантами</h2>
+        <label for="consultant">Выберите консультанта:</label>
+        <select id="consultant">
+            <option value="Александр">Александр</option>
+            <option value="Никита">Никита</option>
+            <option value="Константин">Константин</option>
+        </select>
+
+        <h3>Популярные вопросы:</h3>
+        <button onclick="askQuestion('Какие у вас вечеринки?')">Какие у вас вечеринки?</button>
+        <button onclick="askQuestion('Какие у вас акции?')">Какие у вас акции?</button>
+        <button onclick="askQuestion('Как добраться до клуба?')">Как добраться до клуба?</button>
+        
+        <div id="chatBox"></div>
+    </section>
+
+    <footer>
+        <p>Гей-Клуб © 2025 | Стиль и элегантность.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
